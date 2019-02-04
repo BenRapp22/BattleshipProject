@@ -58,17 +58,17 @@ while 1:
             break
         else:
             print("Try Again!")
-    while 1:
-        try:
-            startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
-            if 1 <= startinput <= 100:
-                break
-            else:
-                print("Choose a space on the board!")
-        except:
-            print("Try Again!")
-    Ship1 = [startinput, ]
-    while 1:
+    if howmanyships == 1:
+        while 1:
+            try:
+                startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
+                if 1 <= startinput <= 100:
+                    break
+                else:
+                    print("Choose a space on the board!")
+            except:
+                print("Try Again!")
+        Ship1 = [startinput, ]
         directioninput = input("Please Select Direction (type RIGHT to place from left --> right, and DOWN to place from up --> down): ")
         if directioninput == "RIGHT":
             for i in range(1, int(shiplength)):
@@ -77,12 +77,174 @@ while 1:
         elif directioninput == "DOWN":
             for i in range(1, int(shiplength)):
                 Ship1.append(startinput + ((10*i) + x))
+            print(str(whichship) + ": " + str(Ship1))
             break
         else:
             print("Try Again!")
-    print(str(whichship) + ": " + str(Ship1))
-    if howmanyships == 7:
+    elif howmanyships == 2:
+        while 1:
+            try:
+                startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
+                if 1 <= startinput <= 100:
+                    break
+                else:
+                    print("Choose a space on the board!")
+            except:
+                print("Try Again!")
+        Ship2 = [startinput, ]
+        directioninput = input("Please Select Direction (type RIGHT to place from left --> right, and DOWN to place from up --> down): ")
+        if directioninput == "RIGHT":
+            for i in range(1, int(shiplength)):
+                Ship2.append(startinput + (i + x))
+            break
+        elif directioninput == "DOWN":
+            for i in range(1, int(shiplength)):
+                Ship2.append(startinput + ((10*i) + x))
+            break
+        else:
+            print("Try Again!")
+        print(str(whichship) + ": " + str(Ship2))
+    elif howmanyships == 3:
+        while 1:
+            try:
+                startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
+                if 1 <= startinput <= 100:
+                    break
+                else:
+                    print("Choose a space on the board!")
+            except:
+                print("Try Again!")
+        Ship3 = [startinput, ]
+        directioninput = input("Please Select Direction (type RIGHT to place from left --> right, and DOWN to place from up --> down): ")
+        if directioninput == "RIGHT":
+            for i in range(1, int(shiplength)):
+                Ship2.append(startinput + (i + x))
+            break
+        elif directioninput == "DOWN":
+            for i in range(1, int(shiplength)):
+                Ship3.append(startinput + ((10*i) + x))
+            break
+        else:
+            print("Try Again!")
+        print(str(whichship) + ": " + str(Ship3))
+    elif howmanyships == 4:
+        while 1:
+            try:
+                startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
+                if 1 <= startinput <= 100:
+                    break
+                else:
+                    print("Choose a space on the board!")
+            except:
+                print("Try Again!")
+        Ship4 = [startinput, ]
+        directioninput = input("Please Select Direction (type RIGHT to place from left --> right, and DOWN to place from up --> down): ")
+        if directioninput == "RIGHT":
+            for i in range(1, int(shiplength)):
+                Ship4.append(startinput + (i + x))
+            break
+        elif directioninput == "DOWN":
+            for i in range(1, int(shiplength)):
+                Ship4.append(startinput + ((10*i) + x))
+            break
+        else:
+            print("Try Again!")
+        print(str(whichship) + ": " + str(Ship4))
+    elif howmanyships == 5:
+        while 1:
+            try:
+                startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
+                if 1 <= startinput <= 100:
+                    break
+                else:
+                    print("Choose a space on the board!")
+            except:
+                print("Try Again!")
+        Ship5 = [startinput, ]
+        directioninput = input("Please Select Direction (type RIGHT to place from left --> right, and DOWN to place from up --> down): ")
+        if directioninput == "RIGHT":
+            for i in range(1, int(shiplength)):
+                Ship5.append(startinput + (i + x))
+            break
+        elif directioninput == "DOWN":
+            for i in range(1, int(shiplength)):
+                Ship5.append(startinput + ((10*i) + x))
+            break
+        else:
+            print("Try Again!")
+        print(str(whichship) + ": " + str(Ship5))
+    elif howmanyships == 6:
+        while 1:
+            try:
+                startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
+                if 1 <= startinput <= 100:
+                    break
+                else:
+                    print("Choose a space on the board!")
+            except:
+                print("Try Again!")
+        Ship6 = [startinput, ]
+        directioninput = input("Please Select Direction (type RIGHT to place from left --> right, and DOWN to place from up --> down): ")
+        if directioninput == "RIGHT":
+            for i in range(1, int(shiplength)):
+                Ship6.append(startinput + (i + x))
+            break
+        elif directioninput == "DOWN":
+            for i in range(1, int(shiplength)):
+                Ship6.append(startinput + ((10*i) + x))
+            break
+        else:
+            print("Try Again!")
+        print(str(whichship) + ": " + str(Ship6))
+    elif howmanyships == 7:
+        while 1:
+            try:
+                startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
+                if 1 <= startinput <= 100:
+                    break
+                else:
+                    print("Choose a space on the board!")
+            except:
+                print("Try Again!")
+        Ship7 = [startinput, ]
+        directioninput = input("Please Select Direction (type RIGHT to place from left --> right, and DOWN to place from up --> down): ")
+        if directioninput == "RIGHT":
+            for i in range(1, int(shiplength)):
+                Ship7.append(startinput + (i + x))
+            break
+        elif directioninput == "DOWN":
+            for i in range(1, int(shiplength)):
+                Ship7.append(startinput + ((10*i) + x))
+            break
+        else:
+            print("Try Again!")
+        print(str(whichship) + ": " + str(Ship7))
+    else:
         break
+
+    #while 1:
+        #try:
+            #startinput = int(input("Please Select Starting Space (keep in mind that ships are placed from left --> right and up --> down): "))
+            #if 1 <= startinput <= 100:
+                #break
+            #else:
+                #print("Choose a space on the board!")
+        #except:
+            #print("Try Again!")
+    #Ship1 = [startinput, ]
+    #while 1:
+        #directioninput = input("Please Select Direction (type RIGHT to place from left --> right, and DOWN to place from up --> down): ")
+        #if directioninput == "RIGHT":
+            #for i in range(1, int(shiplength)):
+                #Ship1.append(startinput + (i + x))
+            #break
+        #elif directioninput == "DOWN":
+            #for i in range(1, int(shiplength)):
+                #Ship1.append(startinput + ((10*i) + x))
+            #break
+        #else:
+            #print("Try Again!")
+    #print(str(whichship) + ": " + str(Ship1
 
 
 #SHIPS CANT OVERLAP
